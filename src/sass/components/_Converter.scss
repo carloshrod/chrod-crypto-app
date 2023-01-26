@@ -1,0 +1,51 @@
+.converter {
+    display: grid;
+    text-align: center;
+    &__loader {
+        display: grid;
+        place-items: center;
+        height: 200px;
+    }
+    &__title {
+        margin-bottom: 1rem;
+        img {
+            width: 20%;
+            background-color: azure;
+        }
+        h3 {
+            text-align: center;
+            color: var(--darker-color);
+        }
+    }
+    form {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1.5rem;
+        & input {
+            width: 150px;
+            max-width: 90%;
+            text-align: center;
+            &:hover {
+                border-color: var(--dark-color);
+                box-shadow: 0 0 0 3px rgba(3, 3, 3, 0.2);
+            }
+            &:focus {
+                border-color: var(--dark-color);
+                box-shadow: 0 0 0 3px rgba(3, 3, 3, 0.2);
+            }
+        }  
+    }
+    &__result {
+        display: flex;
+        justify-content: center;
+        color: var(--secondary-color);
+        margin-bottom: 1rem;
+        span {
+            font-weight: bold;
+            margin-left: .5rem;
+        }
+        @media (max-width: 400px) {
+            flex-wrap: wrap;
+        }
+    }
+}

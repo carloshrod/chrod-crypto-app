@@ -1,0 +1,24 @@
+.backToTop {
+    position: fixed;
+    right: 50%;
+    bottom: .3rem;
+    width: 2rem;
+    height: 2rem;
+    margin-right: -1rem;
+    background: var(--primary-color);
+    border-radius: 50%;
+    border: none;
+    z-index: 99;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.2s;
+    i {
+        color: var(--secondary-color);
+        line-height: 0;
+        margin: auto 0;
+    }
+    &.active {
+        visibility: visible;
+        opacity: 1;
+    }
+}
