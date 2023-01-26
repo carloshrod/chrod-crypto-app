@@ -18,7 +18,7 @@ function Navbar() {
     return (
         <header className="navbar">
             <img
-                src="src/assets/crypto-logo.png"
+                src="/crypto-logo.png"
                 className="navbar__logo"
             />
             <div className="navbar__filter">
